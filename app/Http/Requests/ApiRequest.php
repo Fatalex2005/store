@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use App\Exceptions\ApiException;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
 
 class ApiRequest extends FormRequest
 {
