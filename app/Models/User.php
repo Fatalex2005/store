@@ -24,5 +24,4 @@ class User extends Model
     {
         return $this->hasMany(CartItem::class);
     }
-    protected $casts = ['password_hash' => 'hashed'];
 }

@@ -55,7 +55,7 @@ Route::middleware('auth:api')->group(function () {
     Route::delete('/cart/product/{id}', [CartController::class, 'delete']);
     //Просмотр всех заказов текущего пользователя
     Route::get('/orders', [OrderController::class, 'index']);
-    //Просм
+    //Просмотр всех купленных товаров
     Route::get('/compound', [UserController::class, 'compound']);
 });
 //Функционал администратора
